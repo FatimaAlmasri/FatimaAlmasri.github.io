@@ -10,7 +10,7 @@ body {
   box-sizing: border-box;
 }
 
-/* ===== Top Nav ===== */
+/* Top Nav */
 .topnav {
   position: sticky;
   top: 0;
@@ -77,7 +77,7 @@ body {
   border: 2px solid aqua;
 }
 
-/* ===== Hero ===== */
+/* Hero*/
 .hero-section {
   max-width: 1080px;
   margin: 0 auto;
@@ -147,7 +147,7 @@ body {
   transform: translateY(-3px);
 }
 
-/* ===== Sections ===== */
+/* Section*/
 .about-section,
 .work-section,
 .contact-section {
@@ -156,7 +156,7 @@ body {
   padding: 60px 24px;
 }
 
-/* ===== About ===== */
+/* About */
 .about-me {
   display: flex;
   flex-direction: column;
@@ -224,7 +224,7 @@ body {
   text-indent: 30px;
 }
 
-/* ===== Work ===== */
+/* Work*/
 .work-section {
   text-align: left;
   display: flex;
@@ -300,7 +300,7 @@ body {
   box-sizing: border-box;
 }
 
-/* ===== Contact ===== */
+/* Contact*/
 .contact-details {
   margin-left: 50px;
 }
@@ -415,12 +415,19 @@ body {
   box-shadow: 0 0 5px red, 0 0 10px red, 0 0 20px red;
 }
 
+#hero,
+#about,
+#work,
+#contact {
+  scroll-margin-top: 90px;   
+}
+
 /* ===================================== */
-/* ============ RESPONSIVE ============= */
+/*Media  */
 /* ===================================== */
 @media (max-width: 480px) {
 
-  /* ---- Hero: same row layout as laptop, just scaled down ---- */
+  
   .hero-top {
     flex-direction: row;
     align-items: center;
@@ -458,7 +465,7 @@ body {
     width: 28px;
   }
 
-  /* ---- Work ---- */
+  /* Work*/
   .work-item {
     width: 100%;
     max-width: 360px;
@@ -471,7 +478,7 @@ body {
     width: 100%;
   }
 
-  /* ---- About ---- */
+  /* About */
   .about-section {
     margin-top: 80px;
   }
@@ -498,12 +505,12 @@ body {
     .pimg {
     width: 100%;
     margin-left: 0;
-    margin-top: 0;      /* ← إضافة جديدة، تلغي الـ 40px يلي جايي من الكود الأساسي */
+    margin-top: 0;     
     text-indent: 0;
     padding: 0 8px;
   }
 
-  /* ---- Contact ---- */
+  /* Contact*/
   .contact {
     margin-top: 60px;
     margin-left: 0;
@@ -529,3 +536,4 @@ body {
     width: 100%;
   }
 }
+
